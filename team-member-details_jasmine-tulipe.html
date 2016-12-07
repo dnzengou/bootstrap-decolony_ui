@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Important: you'll only need one of the Bootcards CSS files below for every platform -->
+
+    <!-- Bootcards CSS for iOS: -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.1/css/bootcards-ios.min.css"> -->
+
+    <!-- Bootcards CSS for Android: -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.1/css/bootcards-android.min.css"> -->
+
+    <!-- Bootcards CSS for desktop: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.1/css/bootcards-desktop.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css">
+
+    <!-- Charts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+</head>
+
+<body>
+    <div class="panel panel-default bootcards-summary">
+        <div class="panel-heading">
+            <h3 class="panel-title" style="color:#20aa85">Team Member Details</h3>
+        </div>
+
+
+        <!-- slide in menu (mobile only) -->
+        <nav id="offCanvasMenu" class="navmenu offcanvas offcanvas-left">
+            <ul class="nav">
+                <li>
+                    <a href="summarycard-startup.html" data-pjax="#main" data-title="Customers">
+                        <i class="fa fa-lg fa-dashboard"></i> Startup
+                    </a>
+                </li>
+                <li>
+                    <a href="summarycard-project.html" data-pjax="#main" data-title="Companies">
+                        <i class="fa fa-lg fa-building-o"></i> Project
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="summarycard-project.html#finances" data-pjax="#main" data-title="Contacts">
+                        <i class="fa fa-lg fa-users"></i> Tokens
+                    </a>
+                </li>
+                <li>
+                    <a href="summarycard-project.html#members" data-pjax="#main" data-title="Notes">
+                        <i class="fa fa-lg fa-clipboard"></i> Team members
+                    </a>
+                </li>
+                <li>
+                    <a href="summarycard-project.html#skills" data-pjax="#main" data-title="Charts">
+                        <i class="fa fa-lg fa-bar-chart-o"></i> Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="summarycard-project.html#notes" data-pjax="#main" data-title="Settings">
+                        <i class="fa fa-lg fa-gears"></i> Notes
+                    </a>
+                </li>
+                <li>
+                    <a href="summarycard-project.html#socialmedia" data-pjax="#main" data-title="Settings">
+                        <i class="fa fa-lg fa-gears"></i> Social media
+                    </a>
+                </li>
+                <li>
+                    <a href="summarycard-project.html#growth" data-pjax="#main" data-title="Settings">
+                        <i class="fa fa-lg fa-gears"></i> Progress
+                    </a>
+                </li>
+            </ul>
+
+            <div style="margin-top:20px; padding-left: 20px; font-size: 12px; color: #777">Team member details</div>
+        </nav>
+
+        <div class="container bootcards-container" id="main">
+
+            <div id="contactCard">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left">Contact Details</h3>
+                        <div class="btn-group pull-right visible-xs">
+                            <a class="btn btn-primary" href="/contacts/VBMJHwcLX3Vx/edit" data-toggle="modal" data-target="#editModal">
+                                <i class="fa fa-pencil"></i>
+                                <span>Edit</span>
+                            </a>
+                        </div>
+                        <a class="btn btn-primary pull-right hidden-xs" href="/contacts/VBMJHwcLX3Vx/edit" data-toggle="modal" data-target="#editModal">
+                            <i class="fa fa-pencil"></i>
+                            <span>Edit</span>
+                        </a>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <img src="img/jasmine-tulipe.jpg" class="img-rounded pull-left" />
+                            <label>Name</label>
+                            <h4 class="list-group-item-heading">Tulipe, Jasmine</h4>
+                        </div>
+                        <div class="list-group-item">
+                            <label>Username</label>
+                            <h4 class="list-group-item-heading">jtulipe</h4>
+                        </div>
+                        <div class="list-group-item">
+                            <label>Project</label>
+                            <h4 class="list-group-item-heading">decolony.io</h4>
+                        </div>
+                        <div class="list-group-item">
+                            <label>Role</label>
+                            <h4 class="list-group-item-heading">Admin</h4>
+                        </div>
+                        <div class="list-group-item">
+                            <label>Skills</label>
+                            <h4 class="list-group-item-heading">
+                                <ul>
+                                    <ol>Pharmacology</ol>
+                                    <ol>Copywriting</ol>
+                                </ul>
+                            </h4>
+                        </div>
+                        <div class="list-group-item">
+                            <label>Tasks</label>
+                            <h4 class="list-group-item-heading">
+                                <ul>
+                                    <ol>Product demo copyright</ol>
+                                    <ol>Start working on the UI</ol>
+                                </ul>
+                            </h4>
+                        </div>
+                        <!--<a class="list-group-item" href="tel://+1 650-555-0055">
+                            <label>Phone</label>
+                            <h4 class="list-group-item-heading">+1 650-555-0055</h4>
+                        </a>
+                        <a class="list-group-item" href="mailto:@">
+                            <label>Email</label>
+                            <h4 class="list-group-item-heading">@</h4>
+                        </a>-->
+
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- growth <= progress -->
+                                <div class="col-xs-6 col-sm-4">
+                                    <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
+                                        <i class="fa fa-3x fa-bar-chart"></i>
+                                        <h4>Project progress <span class="label label-info">65%</span></h4>
+                                    </a>
+                                </div>
+
+                                <div class="panel panel-default bootcards-chart cards hidden" id="growth">
+                                    <div class="bootcards-chart-canvas" id="growthChart"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <small class="pull-left">project sample - 1</small>
+                        <a class="btn btn-link btn-xs pull-right" href="summarycard-project.html" data-toggle="modal" data-target="#docsModal">
+							Back</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!--list of notes-->
+            <div>
+
+                <div class="panel panel-default bootcards-chart">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Tasks progress (%)</h3>
+                    </div>
+
+                    <div>
+
+                        <!--bar chart-->
+                        <div class="bootcards-chart-canvas" id="chartClosedSales"></div>
+
+                        <div class="panel-footer">
+                            <button class="btn btn-default btn-block" onClick="toggleChartData()">
+          <i class="fa fa-table"></i>Show Data
+        </button>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <small class="pull-left">project sample - 1</small>
+                    </div>
+
+                </div>
+
+                <!-- Table Card data -->
+                <div class="panel panel-default bootcards-table" style="display:none">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Tasks progress (%)</h3>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="active">
+                                <th>Tasks</th>
+                                <th>Completion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Product demo copyright</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr>
+                                <td>Start working on the UI</td>
+                                <td>40%</td>
+                            </tr>
+                            <td><strong>Average</strong></td>
+                            <td><strong>65%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="panel-footer">
+                        <button class="btn btn-default btn-block" onClick="toggleChartData()">
+        <i class="fa fa-bar-chart-o"></i>Show Chart
+      </button>
+                    </div>
+                    <div class="panel-footer">
+                        <small class="pull-left">project sample - 1</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title pull-left">Notes</h3>
+
+                    <div class="btn-group pull-right">
+                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#editModal">
+                            <i class="fa fa-plus"></i>
+                            <span>Add</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="list-group">
+
+                    <a class="list-group-item pjax" href="notes.html">
+                        <i class="fa fa-2x pull-left fa-check-square-o"></i>
+                        <h4 class="list-group-item-heading">Product demo copyright - details</h4>
+                        <p class="list-group-item-text">Wed 30 Nov 2016 18:36</p>
+                    </a>
+
+                    <a class="list-group-item pjax" href="/notes/id">
+                        <i class="fa fa-phone fa-2x pull-left"></i>
+                        <h4 class="list-group-item-heading">Subject</h4>
+                        <p class="list-group-item-text">Date</p>
+                    </a>
+
+                    <a class="list-group-item pjax" href="/notes/id">
+                        <i class="fa fa-2x pull-left fa-check-square-o"></i>
+                        <h4 class="list-group-item-heading">Start working on the UI</h4>
+                        <p class="list-group-item-text">Fri 02 Dec 2016 07:19</p>
+                    </a>
+
+                    <a class="list-group-item pjax" href="/notes/id">
+                        <i class="fa fa-2x pull-left fa-file-text-o"></i>
+                        <h4 class="list-group-item-heading">Subject</h4>
+                        <p class="list-group-item-text">Date</p>
+                    </a>
+
+                    <a class="list-group-item pjax" href="/notes/id">
+                        <i class="fa fa-2x pull-left fa-paperclip"></i>
+                        <h4 class="list-group-item-heading">Subject</h4>
+                        <p class="list-group-item-text">Date</p>
+                    </a>
+
+                    <a class="list-group-item pjax" href="/notes/id">
+                        <i class="fa fa-2x pull-left fa-picture-o"></i>
+                        <h4 class="list-group-item-heading">Subject</h4>
+                        <p class="list-group-item-text">Date</p>
+                    </a>
+
+                </div>
+
+                <div class="panel-footer">
+                    <small class="pull-left">List Card Footer</small>
+                </div>
+
+            </div>
+
+
+            <!-- fixed tabbed footer -->
+            <div class="navbar navbar-default navbar-fixed-bottom">
+                <div class="container">
+                    <div class="bootcards-desktop-footer clearfix">
+                        <p class="pull-left">Team member details</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Load the required JavaScript libraries -->
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.2/jquery.pjax.min.js"></script>
+
+            <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+
+            <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+            <!-- Bootstrap and Bootcards JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/js/bootcards.min.js"></script>
+
+            <!-- jQuery -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+            <!--Charts-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+            <!--Custom JS-->
+            <script src="js/summarycard.js"></script>
+
+            <!--modals-->
+            <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+            <div class="modal fade" id="docsModal" tabindex="-1" role="dialog" aria-labelledby="docsModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content"></div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                //highlight first list group option (if non active yet)
+                if ($('.list-group a.active').length === 0) {
+                    $('.list-group a').first().addClass('active');
+                }
+
+                bootcards.init({
+                    offCanvasHideOnMainClick: true,
+                    offCanvasBackdrop: true,
+                    enableTabletPortraitMode: true,
+                    disableRubberBanding: true,
+                    disableBreakoutSelector: 'a.no-break-out'
+                });
+            </script>
+
+</body>
+
+</html>

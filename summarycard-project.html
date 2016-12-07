@@ -47,7 +47,7 @@
                             <div class="col-xs-6 col-sm-4">
                                 <a class="bootcards-summary-item" href="#members" onclick="comp('#members')">
                                     <i class="fa fa-3x fa-users"></i>
-                                    <h4>Tem Members <span class="label label-warning">3</span></h4>
+                                    <h4>Team Members <span class="label label-warning">3</span></h4>
                                 </a>
                             </div>
                             <!--- files => projects -->
@@ -58,9 +58,9 @@
                                 </a>
                             </div>
                             <div class="col-xs-6 col-sm-4">
-                                <a class="bootcards-summary-item" href="#tasks" onclick="comp('#tasks')">
-                                    <i class="fa fa-3x fa-check-square-o"></i>
-                                    <h4>Tasks <span class="label label-warning">3</span></h4>
+                                <a class="bootcards-summary-item" href="#notes" onclick="comp('#notes')">
+                                    <i class="fa fa-3x fa-clipboard"></i>
+                                    <h4>Notes<span class="label label-warning">4</span></h4>
                                 </a>
                             </div>
                             <div class="col-xs-6 col-sm-4">
@@ -97,7 +97,7 @@
                                     <td>4</td>
                                 </tr>
                                 <tr>
-                                    <td>Jasmine Tulipe</td>
+                                    <td><a href="team-member-details_jasmine-tulipe.html">Jasmine Tulipe</a></td>
                                     <td>2</td>
                                     <td>4</td>
                                 </tr>
@@ -130,48 +130,58 @@
                                 <tr class="active">
                                     <th>Skills</th>
                                     <th>Team member</th>
+                                    <th>Progress</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Web development</td>
                                     <td>Kevin</td>
+                                    <td>80%</td>
                                 </tr>
                                 <tr>
                                     <td>Art</td>
                                     <td>Seth</td>
+                                    <td>60%</td>
                                 </tr>
                                 <tr>
                                     <td>Pharmacology</td>
                                     <td>Jasmine</td>
+                                    <td>100%</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="table-responsive cards hidden" id="tasks">
+                    <div class="table-responsive cards hidden" id="notes">
                         <table class="table table-hover">
                             <thead>
                                 <tr class="active">
-                                    <th>Tasks</th>
-                                    <th>Status</th>
-                                    <th>Skills</th>
+                                    <th>Notes</th>
+                                    <th>Type</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Ideation and brainstorm</td>
-                                    <td>Done</td>
-                                    <th>Project management</th>
+                                    <td><a href="product-demo.html">Product Demo</a></td>
+                                    <td>File</td>
                                 </tr>
                                 <tr>
-                                    <td>Building website</td>
-                                    <td>Done</td>
-                                    <th>Web development</th>
+                                    <td><a href="product-documents.html">Product Document</a></td>
+                                    <td>File</td>
                                 </tr>
                                 <tr>
-                                    <td>Start working on the UI </td>
-                                    <td>On progress</td>
-                                    <th>Design</th>
+                                    <td><a href="product-image.html">Product image</a></td>
+                                    <td>Media</td>
+                                </tr>
+                                <tr>
+                                    <!-- Admin, start & end dates, smart goals -->
+                                    <td><a href="project-description.html">Description</a></td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <!-- tasks checklist -->
+                                    <td><a href="tasks.html">Tasks</a></td>
+                                    <td>Todo</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -212,7 +222,7 @@
                         <div class="bootcards-chart-canvas" id="growthChart"></div>
                     </div>
                     <div class="panel-footer">
-                        <small>project sample - P</small>
+                        <small>project sample - 1</small>
                     </div>
                 </div>
             </div>

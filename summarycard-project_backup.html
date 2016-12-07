@@ -32,7 +32,7 @@
             <div class="col-md-offset-3 col-md-6">
                 <div class="panel panel-default bootcards-summary">
                     <div class="panel-heading">
-                        <h3 class="panel-title" style="color:#20aa85">Decolony's Startups Management</h3>
+                        <h3 class="panel-title" style="color:#20aa85">Decolony's Projects Management</h3>
                     </div>
                     <!--- finances <= tokens -->
                     <div class="panel-body">
@@ -40,27 +40,27 @@
                             <div class="col-xs-6 col-sm-4">
                                 <a class="bootcards-summary-item" href="#finances" onclick="comp('#finances')">
                                     <i class="fa fa-3x fa-btc"></i>
-                                    <h4>Tokens <span class="label label-info">21</span></h4>
+                                    <h4>Tokens <span class="label label-info">7</span></h4>
                                 </a>
                             </div>
                             <!--- clients <= users -->
                             <div class="col-xs-6 col-sm-4">
                                 <a class="bootcards-summary-item" href="#members" onclick="comp('#members')">
                                     <i class="fa fa-3x fa-users"></i>
-                                    <h4>Members <span class="label label-warning">5</span></h4>
+                                    <h4>Team Members <span class="label label-warning">3</span></h4>
                                 </a>
                             </div>
                             <!--- files => projects -->
                             <div class="col-xs-6 col-sm-4">
-                                <a class="bootcards-summary-item" href="#projects" onclick="comp('#projects')">
-                                    <i class="fa fa-3x fa-folder-open-o"></i>
-                                    <h4>Projects <span class="label label-info">3</span></h4>
+                                <a class="bootcards-summary-item" href="#skills" onclick="comp('#skills')">
+                                    <i class="fa fa-3x fa-file-o"></i>
+                                    <h4>Skills <span class="label label-info">3</span></h4>
                                 </a>
                             </div>
                             <div class="col-xs-6 col-sm-4">
-                                <a class="bootcards-summary-item" href="#notes" onclick="comp('#notes')">
-                                    <i class="fa fa-3x fa-clipboard"></i>
-                                    <h4>Notes <span class="label label-warning">4</span></h4>
+                                <a class="bootcards-summary-item" href="#tasks" onclick="comp('#tasks')">
+                                    <i class="fa fa-3x fa-check-square-o"></i>
+                                    <h4>Tasks <span class="label label-warning">3</span></h4>
                                 </a>
                             </div>
                             <div class="col-xs-6 col-sm-4">
@@ -73,7 +73,7 @@
                             <div class="col-xs-6 col-sm-4">
                                 <a class="bootcards-summary-item" href="#growth" onclick="comp('#growth')">
                                     <i class="fa fa-3x fa-bar-chart"></i>
-                                    <h4>Progress <span class="label label-info">75%</span></h4>
+                                    <h4>Progress <span class="label label-info">40%</span></h4>
                                 </a>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                                     <td>3</td>
                                     <td>6</td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td>Marc Ronald</td>
                                     <td>0</td>
                                     <td>0</td>
@@ -116,69 +116,67 @@
                                     <td>6</td>
                                     <td>12</td>
                                 </tr>
-                                <tr>
-                                    <td><strong>Total</strong></td>
-                                    <td><strong>13</strong></td>
-                                    <td><strong>26</strong></td>
+                                <tr>-->
+                                <td><strong>Total</strong></td>
+                                <td><strong>7</strong></td>
+                                <td><strong>13</strong></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="table-responsive cards hidden" id="projects">
+                    <div class="table-responsive cards hidden" id="skills">
                         <table class="table table-hover">
                             <thead>
                                 <tr class="active">
-                                    <th>Projects</th>
-                                    <!-- Forecast (tokens) -->
-                                    <th>Value</th>
-                                    <th>Description</th>
+                                    <th>Skills</th>
+                                    <th>Team member</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><a href="summarycard-project.html">1</a></td>
-                                    <td>7</td>
-                                    <td>The platform for the gig economy 3.0</td>
+                                    <td>Web development</td>
+                                    <td>Kevin</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="http://kampuscopycenter.com/artchain/index.html">2</a></td>
-                                    <td>5</td>
-                                    <td>When Art meets Blockchain </td>
+                                    <td>Art</td>
+                                    <td>Seth</td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>11</td>
-                                    <td>Bringing plant therapy to the people</td>
+                                    <td>Pharmacology</td>
+                                    <td>Jasmine</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="table-responsive cards hidden" id="notes">
+                    <div class="table-responsive cards hidden" id="tasks">
                         <table class="table table-hover">
                             <thead>
                                 <tr class="active">
-                                    <th>Notes</th>
-                                    <th>Type</th>
+                                    <th>Tasks</th>
+                                    <th>Completion</th>
+                                    <th>Skills</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Product Demos</td>
-                                    <td>File</td>
+                                    <td>Ideation and brainstorm</td>
+                                    <td>100%</td>
+                                    <th>Project management</th>
                                 </tr>
                                 <tr>
-                                    <td>Product image</td>
-                                    <td>Media</td>
+                                    <td>Building website</td>
+                                    <td>60%</td>
+                                    <th>Web development</th>
                                 </tr>
                                 <tr>
-                                    <!-- Admin, start & end dates, smart goals -->
-                                    <td>Description</td>
-                                    <td>Text</td>
+                                    <td>Start working on the UI</td>
+                                    <td>40%</td>
+                                    <th>Design</th>
                                 </tr>
                                 <tr>
-                                    <!-- tasks checklist, w short description & status (done, not done, on progress) -->
-                                    <td><a href="#">Tasks</a></td>
-                                    <td>Todo</td>
+                                    <td>Product demo copyright</td>
+                                    <td>90%</td>
+                                    <th>Copyright</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -187,30 +185,30 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr class="active">
-                                    <th>Channel</th>
+                                    <th>Name</th>
                                     <th>Shared</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Facebook</td>
-                                    <td>37</td>
+                                    <td>14</td>
                                 </tr>
                                 <tr>
                                     <td>Twitter</td>
-                                    <td>21</td>
+                                    <td>17</td>
                                 </tr>
                                 <tr>
                                     <td>Slack</td>
-                                    <td>8</td>
+                                    <td>9</td>
                                 </tr>
                                 <tr>
                                     <td>Telegram</td>
-                                    <td>19</td>
+                                    <td>6</td>
                                 </tr>
                                 <!--<tr>
                                     <td><strong>Total</strong></td>
-                                    <td><strong>84</strong></td>
+                                    <td><strong>46</strong></td>
                                 </tr>-->
                             </tbody>
                         </table>
@@ -219,7 +217,7 @@
                         <div class="bootcards-chart-canvas" id="growthChart"></div>
                     </div>
                     <div class="panel-footer">
-                        <small>&copy; <a href="http://desireyavro.com"> decolony</a> designed by <a href="http://desireyavro.com">desireyavro.com</a></small>
+                        <small>project sample - 1</small>
                     </div>
                 </div>
             </div>
