@@ -26,65 +26,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 </head>
 
-<body id="bootcards">
+<body>
 
-    <div class="container bootcards-container" id="main">
+    <!--list of activities-->
 
-        <div id="activityCard">
+    <div class="panel panel-default">
 
-            <div class="panel panel-default">
-                <div class="panel-heading clearfix">
-                    <h3 class="panel-title pull-left">To Do</h3>
+        <div class="panel-heading clearfix">
+            <h3 class="panel-title pull-left">Description</h3>
 
-                    <!--small screen component-->
-                    <div class="btn-group pull-right visible-xs">
-                        <a class="btn btn-primary" href="/notes/ucw9gtbjq7ls/edit" data-toggle="modal" data-target="#editModal">
-                            <i class="fa fa-pencil"></i>
-                            <span>Edit</span>
-                        </a>
-                    </div>
-
-                    <!--big screen component-->
-                    <a class="btn btn-primary pull-right hidden-xs" href="/notes/ucw9gtbjq7ls/edit" data-toggle="modal" data-target="#editModal">
-                        <i class="fa fa-pencil"></i>
-                        <span>Edit</span>
-                    </a>
-
-                </div>
-                <div class="list-group">
-                    <div class="list-group-item">
-                        <label>Subject</label>
-                        <h4 class="list-group-item-heading"></h4>
-                    </div>
-                    <div class="list-group-item">
-                        <label>Date</label>
-                        <h4 class="list-group-item-heading"></h4>
-                    </div>
-                    <div class="list-group-item">
-                        <label>Details</label>
-                        <h4 class="list-group-item-heading"></h4>
-                    </div>
-                </div>
-                <div class="panel-footer">
-                    <small class="pull-left"></small>
-                    <a class="btn btn-link btn-xs pull-right" href="/snippets/base-card-form" data-toggle="modal" data-target="#docsModal">
-                    </a>
-                </div>
+            <div class="btn-group pull-right">
+                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#editModal">
+                    <i class="fa fa-plus"></i>
+                    <span>Add</span>
+                </a>
             </div>
 
         </div>
 
+        <div class="list-group">
 
+            <a class="list-group-item pjax" href="#">
+                <i class="fa fa-2x pull-left fa-check-square-o"></i>
+                <h4 class="list-group-item-heading">Subject</h4>
+                <p class="list-group-item-text">Date</p>
+            </a>
+
+            <a class="list-group-item pjax" href="#">
+                <i class="fa fa-phone fa-2x pull-left"></i>
+                <h4 class="list-group-item-heading">Subject</h4>
+                <p class="list-group-item-text">Date</p>
+            </a>
+
+            <a class="list-group-item pjax" href="#">
+                <i class="fa fa-2x pull-left fa-file-text-o"></i>
+                <h4 class="list-group-item-heading">Subject</h4>
+                <p class="list-group-item-text">Date</p>
+            </a>
+
+            <a class="list-group-item pjax" href="#">
+                <i class="fa fa-2x pull-left fa-paperclip"></i>
+                <h4 class="list-group-item-heading">Subject</h4>
+                <p class="list-group-item-text">Date</p>
+            </a>
+
+            <a class="list-group-item pjax" href="#">
+                <i class="fa fa-2x pull-left fa-picture-o"></i>
+                <h4 class="list-group-item-heading">Subject</h4>
+                <p class="list-group-item-text">Date</p>
+            </a>
+
+        </div>
+
+        <div class="panel-footer">
+            <small class="pull-left"></small>
+        </div>
+
+    </div>
     </div>
 
 
-
-        <!-- fixed tabbed footer -->
-        <div class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <div class="bootcards-desktop-footer clearfix">
-                    <p class="pull-left">To Do</p>
-                </div>
+    <!-- fixed tabbed footer -->
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="bootcards-desktop-footer clearfix">
+                <p class="pull-left">Description</p>
             </div>
         </div>
     </div>
@@ -99,9 +105,6 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-
-    <!-- Trezor JavaScript library -->
-    <script src="https://trezor.github.io/connect/connect.js"></script>
 
     <!-- Bootcards JS file -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/js/bootcards.min.js"></script>

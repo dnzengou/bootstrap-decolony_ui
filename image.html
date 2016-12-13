@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Important: you'll only need one of the Bootcards CSS files below for every platform -->
+
+    <!-- Bootcards CSS for iOS: -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.1/css/bootcards-ios.min.css"> -->
+
+    <!-- Bootcards CSS for Android: -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.1/css/bootcards-android.min.css"> -->
+
+    <!-- Bootcards CSS for desktop: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.1/css/bootcards-desktop.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.css">
+
+    <!-- Charts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+</head>
+
+<body>
+    <div class="panel panel-default bootcards-summary">
+        <div class="panel-heading">
+            <h3 class="panel-title" style="color:#20aa85">Image</h3>
+        </div>
+
+        <div class="container bootcards-container" id="main">
+
+            <div id="activityCard">
+
+                <div class="panel panel-default bootcards-media">
+                    <div class="panel-heading clearfix">
+                        <h3 class="panel-title pull-left">Media</h3>
+
+                        <!--small screen component-->
+                        <div class="btn-group pull-right visible-xs">
+                            <a class="btn btn-primary" href="/notes/uywr1g2fnvuo/edit" data-toggle="modal" data-target="#editModal">
+                                <i class="fa fa-pencil"></i>
+                                <span>Edit</span>
+                            </a>
+                        </div>
+
+                        <!--big screen component-->
+                        <a class="btn btn-primary pull-right hidden-xs" href="/notes/uywr1g2fnvuo/edit" data-toggle="modal" data-target="#editModal">
+                            <i class="fa fa-pencil"></i>
+                            <span>Edit</span>
+                        </a>
+
+                    </div>
+                    <div class="panel-body">
+                        Product image.
+                    </div>
+                    <img src="img/gantt.png" class="img-responsive" />
+                    <div class="panel-footer">
+                        <small class="pull-left"></small>
+                        <a class="btn btn-link btn-xs pull-right" href="/snippets/media-card" data-toggle="modal" data-target="#docsModal">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- fixed tabbed footer -->
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="bootcards-desktop-footer clearfix">
+                    <p class="pull-left">Image</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load the required JavaScript libraries -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.2/jquery.pjax.min.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+        <!-- Bootcards JS file -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/js/bootcards.min.js"></script>
+
+        <script src="/bootcards-demo-app/js/bootcards-demo-app.js"></script>
+
+        <!--modals-->
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content"></div>
+            </div>
+        </div>
+        <div class="modal fade" id="docsModal" tabindex="-1" role="dialog" aria-labelledby="docsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content"></div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            //highlight first list group option (if non active yet)
+            if ($('.list-group a.active').length === 0) {
+                $('.list-group a').first().addClass('active');
+            }
+
+            bootcards.init({
+                offCanvasHideOnMainClick: true,
+                offCanvasBackdrop: true,
+                enableTabletPortraitMode: true,
+                disableRubberBanding: true,
+                disableBreakoutSelector: 'a.no-break-out'
+            });
+        </script>
+
+</body>
+
+</html>

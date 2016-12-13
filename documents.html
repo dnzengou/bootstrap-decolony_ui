@@ -26,67 +26,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 </head>
 
-<body id="bootcards">
+<body>
 
     <div class="container bootcards-container" id="main">
 
-        <div id="activityCard">
+        <div class="panel panel-default bootcards-file">
 
-            <div class="panel panel-default">
-                <div class="panel-heading clearfix">
-                    <h3 class="panel-title pull-left">To Do</h3>
-
-                    <!--small screen component-->
-                    <div class="btn-group pull-right visible-xs">
-                        <a class="btn btn-primary" href="/notes/ucw9gtbjq7ls/edit" data-toggle="modal" data-target="#editModal">
-                            <i class="fa fa-pencil"></i>
-                            <span>Edit</span>
-                        </a>
-                    </div>
-
-                    <!--big screen component-->
-                    <a class="btn btn-primary pull-right hidden-xs" href="/notes/ucw9gtbjq7ls/edit" data-toggle="modal" data-target="#editModal">
-                        <i class="fa fa-pencil"></i>
-                        <span>Edit</span>
+            <div class="panel-heading">
+                <h3 class="panel-title">File</h3>
+            </div>
+            <div class="list-group">
+                <div class="list-group-item">
+                    <a href="#">
+                        <i class="icon-file-pdf"></i>
                     </a>
-
+                    <h4 class="list-group-item-heading">
+                        <a href="#">(Title)
+				</a>
+                    </h4>
+                    <p class="list-group-item-text"><strong>PDF</strong></p>
+                    <p class="list-group-item-text"><strong>Mb</strong></p>
                 </div>
-                <div class="list-group">
-                    <div class="list-group-item">
-                        <label>Subject</label>
-                        <h4 class="list-group-item-heading"></h4>
+                <div class="list-group-item">
+                    <p class="list-group-item-text"><strong>Added by (user) on (Date)</strong></p>
+                </div>
+                <div class="list-group-item">
+                    <p class="list-group-item-text">(Description)</p>
+                </div>
+            </div>
+            <div class="panel-footer clearfix">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button class="btn btn-default">
+					<i class="fa fa-arrow-down"></i>
+					Download  
+				</button>
                     </div>
-                    <div class="list-group-item">
-                        <label>Date</label>
-                        <h4 class="list-group-item-heading"></h4>
+                    <div class="btn-group">
+                        <button class="btn btn-default">
+					<i class="fa fa-star"></i>
+					Favorite  
+				</button>
                     </div>
-                    <div class="list-group-item">
-                        <label>Details</label>
-                        <h4 class="list-group-item-heading"></h4>
+                    <div class="btn-group">
+                        <button class="btn btn-default">
+					<i class="fa fa-envelope"></i>
+					Email 
+				</button>
                     </div>
                 </div>
-                <div class="panel-footer">
-                    <small class="pull-left"></small>
-                    <a class="btn btn-link btn-xs pull-right" href="/snippets/base-card-form" data-toggle="modal" data-target="#docsModal">
-                    </a>
-                </div>
+            </div>
+            <div class="panel-footer">
+                <small class="pull-left"></small>
+                <a class="btn btn-link btn-xs pull-right" href="/snippets/file-card" data-toggle="modal" data-target="#docsModal">
+                </a>
             </div>
 
         </div>
-
-
     </div>
 
 
 
-        <!-- fixed tabbed footer -->
-        <div class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <div class="bootcards-desktop-footer clearfix">
-                    <p class="pull-left">To Do</p>
-                </div>
+    <!-- fixed tabbed footer -->
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="bootcards-desktop-footer clearfix">
+                <p class="pull-left">Documents</p>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Load the required JavaScript libraries -->
